@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: app1
-        image: joindevops/app1:1.0.0
+        image: nagaleelachandrala/app1:1.0.0
         ports:
         - containerPort: 80
 ---
@@ -42,7 +42,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:273354630431:certificate/e446611e-66cb-4dc9-8e70-9a5982e59223
-    alb.ingress.kubernetes.io/group.name: joindevops
+    alb.ingress.kubernetes.io/group.name: nagaleelachandrala
 spec:
   ingressClassName: alb
   rules:
