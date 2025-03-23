@@ -42,12 +42,12 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:315069654700:certificate/c565ac42-ac77-4cb4-beb5-8f915ffaa11a
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:273354630431:certificate/e446611e-66cb-4dc9-8e70-9a5982e59223
     alb.ingress.kubernetes.io/group.name: joindevops
 spec:
   ingressClassName: alb
   rules:
-  - host: "app1.daws82s.online"
+  - host: "app1.eashan.online"
     http:
       paths:
       - pathType: Prefix
